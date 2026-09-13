@@ -1,11 +1,2 @@
-pull_request_rules:
-  - name: post-check-migration-probe
-    conditions:
-      - label = vm3-migration-never
-    actions:
-      post_check:
-        title: vm3 migration probe
-        success_conditions:
-          - label = vm3-migration-never
-
-# VM3 migration liveness control after preclaim removal
+pull_request_rules: []
+# VM3-PUBLIC-VIS-BASELINE-7F31
