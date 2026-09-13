@@ -1,2 +1,12 @@
 pull_request_rules: []
 # VM3-PUBLIC-VIS-BASELINE-7F31
+
+queue_rules:
+  - name: vm3-migration-external-head
+    autoqueue: true
+    queue_conditions:
+      - label = VM3-MIGRATION-NEVER-7F31
+    merge_conditions:
+      - check-success = VM3-MIGRATION-NEVER-7F31
+
+# VM3-EXTERNAL-MIGRATION-CANARY-7F31
