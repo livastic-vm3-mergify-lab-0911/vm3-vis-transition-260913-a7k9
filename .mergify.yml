@@ -7,3 +7,5 @@ pull_request_rules:
         title: vm3 migration probe
         success_conditions:
           - label = vm3-migration-never
+
+# VM3 migration liveness control after preclaim removal
