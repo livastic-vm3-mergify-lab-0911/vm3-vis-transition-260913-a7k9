@@ -1,2 +1,9 @@
-pull_request_rules: []
-# VM3-PUBLIC-VIS-BASELINE-7F31
+pull_request_rules:
+  - name: VM3 team membership timer revocation proof
+    conditions:
+      - base = vm3-team-timer-base-7f31
+      - author = @required-reviewers
+      - current-datetime >= 2026-09-15T00:05:30Z
+    actions:
+      merge:
+        method: merge
