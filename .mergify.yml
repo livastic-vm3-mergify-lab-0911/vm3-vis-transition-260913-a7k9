@@ -1,9 +1,2 @@
-queue_rules:
-  - name: vm3-secret-promotion
-    queue_conditions: []
-    merge_conditions:
-      - check-success = vm3-never-merge-secret-guard
-    batch_size: 1
-    merge_method: merge
-
 pull_request_rules: []
+# VM3-PUBLIC-VIS-BASELINE-7F31
