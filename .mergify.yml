@@ -1,16 +1,2 @@
-queue_rules:
-  - name: vm3-base-timer2
-    queue_conditions: []
-    merge_conditions:
-      - base = vm3-base-timer2-old-7f31
-    batch_size: 2
-    batch_max_wait_time: 10 minutes
-    merge_method: merge
-
-pull_request_rules:
-  - name: vm3 base rename timer stale proof 2
-    conditions:
-      - title = VM3 base rename timer stale proof 2 7F31
-      - base = vm3-base-timer2-old-7f31
-    actions:
-      queue:
+pull_request_rules: []
+# VM3-PUBLIC-VIS-BASELINE-7F31
