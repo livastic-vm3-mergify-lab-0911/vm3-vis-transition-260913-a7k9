@@ -9,6 +9,14 @@ queue_rules:
     batch_max_wait_time: 6 minutes
     merge_method: merge
 
+  - name: vm3-root2-fromfork-probe
+    queue_conditions:
+      - title = VM3_ROOT2_FROMFORK_PROBE_20260915
+    merge_conditions:
+      - check-success = vm3-never-merge-fromfork-probe
+    batch_size: 1
+    merge_method: merge
+
 
 
 
