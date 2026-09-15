@@ -24,7 +24,26 @@ queue_rules:
 
 
 
-pull_request_rules: []
+pull_request_rules:
+  - name: vm3-root2-fromfork-true-canary
+    conditions:
+      - number = 20
+      - author = mergify[bot]
+      - head = mergify/merge-queue/42511d134c
+      - from-fork
+    actions:
+      comment:
+        message: VM3_ROOT2_FROMFORK_TRUE_CANARY_20260915
+
+  - name: vm3-root2-fromfork-false-canary
+    conditions:
+      - number = 20
+      - author = mergify[bot]
+      - head = mergify/merge-queue/42511d134c
+      - -from-fork
+    actions:
+      comment:
+        message: VM3_ROOT2_FROMFORK_FALSE_CANARY_20260915
 
 
 
