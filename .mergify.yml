@@ -3,7 +3,10 @@ pull_request_rules:
     conditions:
       - base = vm3-team-timer-base-7f31
       - author = @required-reviewers
-      - current-datetime >= 2026-09-15T00:05:30Z
+      - current-datetime >= 2026-09-15T00:12:00Z
     actions:
       merge:
         method: merge
+
+
+
