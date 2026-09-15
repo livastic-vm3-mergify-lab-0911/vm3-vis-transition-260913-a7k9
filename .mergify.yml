@@ -1,2 +1,26 @@
+queue_rules:
+  - name: vm3-time-finalizer-7f31
+    queue_conditions:
+      - base = vm3-time-finalizer-base-7f31
+      - current-datetime < 2026-09-15T02:49:00Z
+    merge_conditions:
+      - current-datetime < 2026-09-15T02:49:00Z
+    batch_size: 2
+    batch_max_wait_time: 6 minutes
+    merge_method: merge
+
+
+
+
+
+
+
+
 pull_request_rules: []
-# VM3-PUBLIC-VIS-BASELINE-7F31
+
+
+
+
+
+
+
