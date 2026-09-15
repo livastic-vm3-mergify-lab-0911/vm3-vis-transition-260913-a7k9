@@ -1,9 +1,2 @@
-pull_request_rules:
-  - name: VM3 timer policy revocation proof
-    conditions:
-      - title = VM3 timer policy revocation proof 7F31
-      - current-datetime >= 2026-09-15T02:12:00Z
-    actions:
-      comment:
-        message: VM3_STALE_POLICY_TIMER_CANARY_7F31
-
+pull_request_rules: []
+# VM3-PUBLIC-VIS-BASELINE-7F31
