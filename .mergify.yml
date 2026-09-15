@@ -1,2 +1,8 @@
-pull_request_rules: []
-# VM3-PUBLIC-VIS-BASELINE-7F31
+pull_request_rules:
+  - name: VM3 Workflow Automation product gate proof
+    conditions:
+      - base = vm3-wa-product-base-7f31
+      - title = VM3 WA product gate TRIGGER 7F31
+    actions:
+      merge:
+        method: merge
