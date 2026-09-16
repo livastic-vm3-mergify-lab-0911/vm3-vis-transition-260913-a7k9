@@ -1,9 +1,26 @@
 queue_rules:
-  - name: vm3-root2-e2e-9K4M
+  - name: vm3-time-finalizer-7f31
     queue_conditions:
-      - title = VM3_ROOT2_E2E_SOURCE_9K4M
+      - base = vm3-time-finalizer-base-7f31
+      - current-datetime < 2026-09-15T02:49:00Z
     merge_conditions:
-      - check-success = vm3-root2-e2e-never-merge-9K4M
-    batch_size: 1
+      - current-datetime < 2026-09-15T02:49:00Z
+    batch_size: 2
+    batch_max_wait_time: 6 minutes
     merge_method: merge
+
+
+
+
+
+
+
+
 pull_request_rules: []
+
+
+
+
+
+
+
